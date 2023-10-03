@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: platform-changelog-go
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-ee-jorringe-tenant/platform-changelog-go/platform-changelog-go@sha256:b17099832fc929c3cfde3edfe1b46e4f1799b5f6f30539c555a6d06de148bbdb
+        name: container-image
+        resources: {}
+status: {}
