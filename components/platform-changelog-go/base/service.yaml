@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: platform-changelog-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: platform-changelog-go
+    app.kubernetes.io/part-of: platform-changelog-go
+  name: platform-changelog-go
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: platform-changelog-go
+status:
+  loadBalancer: {}
