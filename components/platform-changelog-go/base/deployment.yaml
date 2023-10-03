@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: platform-changelog-go
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rh-ee-jorringe-tenant/platform-changelog-go/platform-changelog-go@sha256:b17099832fc929c3cfde3edfe1b46e4f1799b5f6f30539c555a6d06de148bbdb
         imagePullPolicy: Always
         name: container-image
         ports:
